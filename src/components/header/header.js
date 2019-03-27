@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { Row, Col } from "react-flexbox-grid";
-
 import './header.scss';
-
 
 function Header(props) {
     return (
-        <Row center="md">
+        <Row className="header drop-shadow" center="md" middle="md">
             <Col md={12}>
-                Hi {props.name}
+                {props.name}'s turn
             </Col>
         </Row>
 
