@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Row, Col } from "react-flexbox-grid";
 import './tile.scss';
 
 class Tile extends Component {

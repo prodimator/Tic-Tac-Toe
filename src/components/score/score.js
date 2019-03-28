@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Row, Col } from "react-flexbox-grid";
 import './score.scss';
 import Girl from '../../svg/girl.svg';
@@ -12,15 +12,15 @@ function Score(props) {
                 <Col md={6}>
                     <div className="player xBlue">
                         <img src={Girl} className="svg" alt="girl" />
-                        <p className="name">Player 1</p>
-                        <p className="player-score">Score: 3</p>
+                        <p className="name">{props.player1.name}</p>
+                        <p className="player-score">Score: {props.player1.score}</p>
                     </div>
                 </Col>
                 <Col md={6}>
                     <div className="player oRed">
                         <img src={Man} className="svg" alt="man" />
-                        <p className="name">Player 2</p>
-                        <p className="player-score">Score: 0</p>
+                        <p className="name">{props.player2.name}</p>
+                        <p className="player-score">Score: {props.player2.score}</p>
                     </div>
                 </Col>
             </Row>

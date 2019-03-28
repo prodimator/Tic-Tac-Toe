@@ -6,8 +6,18 @@
     display: flex;
     justify-content:center;
     flex-direction:column;
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 4rem;
+    font-weight: 400;
     height: 150px;
     width: 150px;
+}
+
+.xWin{
+    background: $xBlue;
+    color: $white;
+}
+
+.oWin{
+    background: $oRed;
+    color: $white;
 }
