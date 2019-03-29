@@ -22,11 +22,11 @@ class Header extends Component {
         }
 
         let reset, nextRound;
+        reset = <span className="action" onClick = {this.props.reset}>Reset</span>;
         if (this.props.winner !== "" || this.props.tie){
-            reset = <span className="action" onClick = {this.props.reset}>Reset</span>;
             nextRound = <span className="action" onClick = {this.props.nextRound}>Next Round</span>;
         }
-        if (this.props.winner === ""){
+        if (this.props.winner === "" && !this.props.tie){
             nextRound = <span className="action" onClick = {this.props.clearBoard}>Clear Board</span>;
         }
         return (
@@ -41,10 +41,8 @@ class Header extends Component {
                     {nextRound}
                 </Col>
             </Row>
-
         );
     }
-
 }
 
 export default Header;

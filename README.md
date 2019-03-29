@@ -4,7 +4,7 @@
 
 I built this using React. It is required that you have npm installed in order to build and run the app.
 
-1. cd into the directory
+1. cd into the repository directory
 2. `npm install`
 3. `npm start`
 

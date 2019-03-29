@@ -5,7 +5,7 @@ import Header from './components/header/header';
 import Tile from './components/tile/tile';
 import Score from './components/score/score';
 
-//for resetting game
+//for initial state and resetting game 
 const initialState = {
   playerTurn: {
     name: "Player 1",
@@ -91,7 +91,7 @@ class Game extends Component {
       this.setWinner();
       return true;
     }
-    if (!this.state.board[0].includes('') && !this.state.board[1].includes('') && !this.state.board[2].includes('')){   //if there is no winner and board is full
+    if (!this.state.board[0].includes('') && !this.state.board[1].includes('') && !this.state.board[2].includes('')) {   //if there is no winner and board is full
       this.setState({
         tie: true
       });
@@ -153,7 +153,7 @@ class Game extends Component {
     return (
       <>
         <div className="Game">
-          <Header name={this.state.playerTurn.name} winner={this.state.winner} tie={this.state.tie} reset={this.reset} nextRound = {this.nextRound} clearBoard = {this.clearBoard}/>
+          <Header name={this.state.playerTurn.name} winner={this.state.winner} tie={this.state.tie} reset={this.reset} nextRound={this.nextRound} clearBoard={this.clearBoard} />
         </div>
         <Row center="md">
           <Col md={6} sm={6} xs={6}>
