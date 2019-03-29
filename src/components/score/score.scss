@@ -1,0 +1,22 @@
+@import '../../styles/colors/colors.scss';
+
+.score{
+    background: $white;
+    border-radius: 10px; 
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    margin: auto;
+    height: 150px;
+    width: 475px;
+
+    p{
+        margin: 6px;
+    }
+    .svg{
+        width: 50px;
+    }
+    .player-score{
+        font-weight: 100;
+    }
+}

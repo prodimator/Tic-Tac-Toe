@@ -1,0 +1,13 @@
+@import '../../styles/colors/colors.scss';
+
+.header{
+    background: $white;
+    font-size: 1.5rem;
+    height: 70px;
+
+    .action{
+        font-size: 1.0rem;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+}
